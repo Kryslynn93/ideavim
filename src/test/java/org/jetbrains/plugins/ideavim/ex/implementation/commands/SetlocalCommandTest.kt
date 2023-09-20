@@ -388,12 +388,12 @@ class SetlocalCommandTest : VimTestCase() {
       |nodigraph           noincsearch           selectmode=         timeoutlen=1000
       |noexchange          nomatchit             shellcmdflag=-x   notrackactionids
       |nogdefault            maxmapdepth=20      shellxescape=@      unifyjumps
-      |nohighlightedyank     more                shellxquote={       virtualedit=
-      |  history=50        nomultiple-cursors    showcmd           novisualbell
-      |nohlsearch          noNERDTree            showmode            visualdelay=100
-      |noideaglobalmode      nrformats=hex       sidescroll=0        whichwrap=b,s
-      |--ideajoin          nonumber              sidescrolloff=-1    wrapscan
-      |  ideamarks         nooctopushandler    nosmartcase
+      |nohighlightedyank     more                shellxquote={     nousenewregex
+      |  history=50        nomultiple-cursors    showcmd             virtualedit=
+      |nohlsearch          noNERDTree            showmode          novisualbell
+      |noideaglobalmode      nrformats=hex       sidescroll=0        visualdelay=100
+      |--ideajoin          nonumber              sidescrolloff=-1    whichwrap=b,s
+      |  ideamarks         nooctopushandler    nosmartcase           wrapscan
       |  idearefactormode=   oldundo             startofline
       |  ideastrictmode    norelativenumber    nosurround
       |  clipboard=ideaput,autoselect,exclude:cons\|linux
@@ -509,6 +509,7 @@ class SetlocalCommandTest : VimTestCase() {
       |notrackactionids
       |  undolevels=-123456
       |  unifyjumps
+      |nousenewregex
       |novim-paragraph-motion
       |  viminfo='100,<50,s10,h
       |  vimscriptfunctionannotation
